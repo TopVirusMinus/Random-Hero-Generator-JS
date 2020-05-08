@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+	display: flex;
+	width: 90%;
+	height: 10vh;
+	margin: auto;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo-container,
+.nav-links {
+	display: flex;
+}
+
+.logo-container {
+	flex: 1;
+}
+.logo {
+	font-weight: 400;
+    margin: 5px;
+    color: white;
+}
+nav {
+	flex: 2;
+}
+.nav-links {
+	justify-content: space-around;
+	list-style: none;
+}
+.nav-link {
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+}
+.nav-link:hover {
+	color: lightgreen;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+body{
+
+background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('css/background.jpg');
+background-size: cover;
+}
+h1{
+    color: white;
+    font-size: 6rem;
+    text-align: center;
+    margin-top: 10%;
+    font-family: 'Anton', sans-serif;
+}
+h2{
+    color: lightgreen;
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+   
+    
+}
+.container{
+    text-align:center;
+}
+#btnBoy, #btnGirl,#btnMarvel{
+    width: 20%;
+    margin: 50px auto 0 auto;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+#btnGirl{
+    background-color: rgb(255, 93, 120);
+}
+
+#btnGirl:hover{
+    background-color: rgb(248, 66, 96);
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+   
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    height: 100px;
+}
+
+.icon{
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 1px;
+}
+
+.icon:hover{
+    transform: scale(2.0);
+    
+}
+
+p{
+    margin-bottom: 1px;
+}
+
+#btnCopy{
+    width: 30px;
+    border: none;
+  
+}
+
+#btnCopy:hover{
+    transform: scale(2.0);
+    border: none;
+  
+}
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+body {
+  margin:0px;
+  font-family:'Roboto';
+  text-align:center;
+}
+
+#container {
+  color:#999;
+  text-transform: uppercase;
+  font-size:36px;
+  font-weight:bold;
+    top: 70px;
+  position:relative;
+  width:100%;
+  display:block;
+}
+
+#flip {
+  height:50px;
+  overflow:hidden;
+}
+
+#flip > div > div {
+  color:#fff;
+  padding:4px 12px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip div div {
+  background:#42c58a;
+}
+#flip div:first-child div {
+  background:#4ec7f3;
+}
+#flip div:last-child div {
+  background:#DC143C;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+p {
+  position:fixed;
+  width:100%;
+  bottom:30px;
+  font-size:12px;
+  color:#999;
+  margin-top:200px;
+}
